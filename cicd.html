@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><h1></h1></title>
+    </head>
+    <body>
+
+
+
+
+What do CI and CD mean?
+The close relationship between continuous integration, continuous delivery and continuous deployment can sometimes be confusing, especially when combined in the cyclical process known as CI/CD. It's important to understand the differences between each approach.
+
+Continuous integration (CI) focuses on the early stages of a software development pipeline where the code is built and undergoes initial testing. Multiple developers work on the same codebase simultaneously and make frequent commits to the code repository. Build frequency can be daily or even several times per day at some points in the project's lifecycle. These small, frequent builds enable easy and low-risk experimentation, as well as the ability to easily roll back or abandon undesirable outcomes.
+
+CI employs a variety of tools and automation techniques to create builds and shepherd them through initial testing, such as sniff or unit testing, along with more comprehensive integration testing. CI is also noted for its rapid and detailed feedback. The limited nature of each iteration means that bugs are identified, located, reported and corrected with relative ease.
+
+Ultimately, CI ends when a build successfully completes initial testing and is ready to move to more comprehensive testing. Preparation might include packaging the build into a deployable image, such as a container or virtual machine (VM) image, before making it available to dedicated testers.
+
+Continuous delivery (CD) picks up where CI leaves off. It focuses on the later stages of a pipeline, where a completed build is thoroughly tested, validated and delivered for deployment. Continuous delivery can -- but does not necessarily -- deploy a successfully tested and validated build.
+
+CD likewise relies heavily on tools and automation to take a build through advanced testing, including functional, user acceptance, configuration and load testing. These validate that the build meets requirements and is ready for use in a production environment. Again, small incremental iterations ensure that any problems revealed in testing are identified and remediated quickly and less expensively than traditional software development approaches.
+
+Continuous deployment (also CD) follows the same basic steps as continuous delivery. The principal difference between delivery and deployment is that continuous deployment automatically deploys each validated build to production. By comparison, continuous delivery typically just stages the validated build for manual deployment or other human authorization.
+

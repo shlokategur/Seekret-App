@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><h1>Details About Developers & Engineers</h1></title>
+    </head>
+    <body>
+
+
+
+<h3>change=chaos</h3>
+Chaos Engineering Defined
+According to the Principles of Chaos Engineering:
+
+Chaos Engineering is the discipline of experimenting on a system in order to build confidence in the system’s capability to withstand turbulent conditions in production.
+
+Users of a system want it to be reliable. Many factors can affect reliability (see “Locations of Dark Debt”), and as chaos engineers we are able to focus on establishing evidence of how resilient our systems are in the face of these unexpected, but inevitable, conditions.
+
+Chaos engineering’s sole purpose is to provide evidence of system weaknesses. Through scientific chaos engineering experiments, you can test for evidence of weaknesses in your system—sometimes called dark debt—that provides insights into how your system might respond to turbulent, production-like conditions.
+
+DARK DEBT?
+The STELLA Report states that “Dark debt is found in complex systems and the anomalies it generates are complex system failures. Dark debt is not recognizable at the time of creation. Its impact is not to foil development but to generate anomalies. It arises from the unforeseen interactions of hardware or software with other parts of the framework. There is no specific countermeasure that can be used against dark debt because it is invisible until an anomaly reveals its presence.”
+
+In a nutshell, any sufficiently complex system is likely to contain surprising dark debt that can threaten the functioning of the system. It is a by-product of the necessary complexity of modern software systems and so cannot be designed out. Chaos engineering exists to help you surface evidence of dark debt so that you can meet its challenge before it becomes a critical problem for your system.
+
+Take an example where you have two services that communicate with each other. In Figure 1-1, Service A is dependent on Service B.
+
+An image of a simple two service system
+Figure 1-1. A simple two-service system
+What should happen if Service B dies? What will happen to Service A if Service B starts to respond slowly? What happens if Service B comes back after going away for a period of time? What happens if the connection between Service A and B becomes increasingly busy? What happens if the CPU that is being used by Service B is maxed out? And most importantly, what does this all mean to the user?
+
+You might believe you’ve designed the services and the infrastructure perfectly to accommodate all of these cases, but how do you know? Even in such a simple system it is likely there might be some surprises—some dark debt—present. Chaos engineering provides a way of exploring these uncertainties to find out whether your assumptions of the system’s resiliency hold water in the real world.
+
